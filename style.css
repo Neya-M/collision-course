@@ -20,10 +20,10 @@ a {
 	text-decoration: none; 
 	border: 25px solid; 
 	border-radius: 25px; 
-	opacity: 0.5; 
+	opacity: 1; 
 }
 a:hover { 
-	opacity: 1; 
+	opacity: 0.5; 
 }
 .divider {
 	width: 90%;
