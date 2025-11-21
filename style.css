@@ -15,6 +15,7 @@ h1 {
 	margin-top: 5%;
 }
 a,button { 
+    display: flex;
 	font-size: 25px; 
 	background: none;
 	font-family: monospace;
@@ -23,9 +24,11 @@ a,button {
 	border: 10px solid; 
 	border-radius: 10px; 
 	opacity: 1;
-    	margin-top: 5%;
-    	padding: 4px;
-    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 4px;
+    width: 8%;
 }
 a:hover,button:hover { 
 	opacity: 0.5; 
@@ -40,5 +43,26 @@ img {
     	image-rendering: pixelated;
 }
 p {
-    	margin-bottom: 20px
+        display: flex;
+        width: 80%;
+        margin: auto;
+}
+.earth, .asteroid, .laser {
+	position: absolute;
+	width: 250px;
+}
+.earth {
+	bottom: 0;
+	left: 0;
+}
+.asteroid {
+	bottom: 50%;
+	left: 40%;
+}
+.laser {
+	bottom: 30%;
+	left: 30%;
+}
+.stats {
+    display: revert 
 }
