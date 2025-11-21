@@ -66,3 +66,9 @@ p {
 .stats {
     display: revert 
 }
+.arrows {
+	position: absolute;
+	width: 50px;
+	bottom: 40%;
+	left: 41%;
+}
