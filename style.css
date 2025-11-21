@@ -23,7 +23,9 @@ a,button {
 	border: 10px solid; 
 	border-radius: 10px; 
 	opacity: 1;
-        padding: 4px;	
+    	margin-top: 5%;
+    	padding: 4px;
+    
 }
 a:hover,button:hover { 
 	opacity: 0.5; 
@@ -32,4 +34,11 @@ a:hover,button:hover {
 	width: 90%;
 	border-top: 3px solid white;
 	margin-bottom: 20%;
+}
+img {
+    	width: 100px;
+    	image-rendering: pixelated;
+}
+p {
+    	margin-bottom: 20px
 }
