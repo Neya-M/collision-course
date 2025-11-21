@@ -4,6 +4,7 @@ const text = document.getElementById("text");
 var earthOrbitSize = 200;
 var width = ctx.canvas.width;
 var height = ctx.canvas.height;
+var astspeed = 2;
 var centerX = width/2;
 var centerY = height/2;
 const Aradius1 = 150;
@@ -23,12 +24,12 @@ function draw() {
 	theta += 0.01;
 	const x =
 	centerX - 130 +
-	Aradius1 * Math.cos(theta) * Math.cos(rotation) -
-	Aradius2 * Math.sin(theta) * Math.sin(rotation);
+	Aradius1 * Math.cos(theta/astspeed) * Math.cos(rotation) -
+	Aradius2 * Math.sin(theta/astspeed) * Math.sin(rotation);
 	const y =
 	centerY - 130 +
-	Aradius1 * Math.cos(theta) * Math.sin(rotation) +
-	Aradius2 * Math.sin(theta) * Math.cos(rotation);
+	Aradius1 * Math.cos(theta/astspeed) * Math.sin(rotation) +
+	Aradius2 * Math.sin(theta/astspeed) * Math.cos(rotation);
 	ctx.globalCompositeOperation = "destination-over";
 	ctx.clearRect(0, 0, width, height);
 	// asteroid
@@ -85,3 +86,4 @@ function draw() {
 	//text.innerHTML = String(Math.floor(theta/3)) + " years"
 	window.requestAnimationFrame(draw);
 }
+
